@@ -1,0 +1,33 @@
+# arquivos do quartus
+synthesis/Altera/**/db
+synthesis/Altera/**/incremental_db
+synthesis/Altera/**/output_files
+synthesis/Altera/**/*.qpf
+synthesis/Altera/**/*.qsf
+synthesis/Altera/**/greybox_tmp
+synthesis/Altera/**/*.bak
+synthesis/Altera/**/*.rpt
+synthesis/Altera/**/*.qar
+synthesis/Altera/**/*.qarlog
+synthesis/Altera/**/*.qws
+synthesis/Altera/**/simulation
+
+# arquivos de simulação (QuestaSim ou ModelSim)
+simulation/modelsim.ini
+simulation/work/
+simulation/transcript
+simulation/*.wlf
+simulation/Makefile
+simulation/assembly_converter/program.*
+simulation/ROM.mif
+simulation/RAM.mif
+
+# arquivos de automação de simulação (hdlmake + scripts python)
+*macros.vh
+*__pycache__
+simulation/log.txt
+
+# arquivos de sintese do Vivado (manter apenas arquivos do usuario)
+synthesis/Vivado/*
+!synthesis/Vivado/constraints
+!synthesis/Vivado/Manifest.py
