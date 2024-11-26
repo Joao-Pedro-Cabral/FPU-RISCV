@@ -11,4 +11,13 @@ package ieee_float_pkg;
     logic [Fraction-1:0] frac;
   } ieee_float;
 
+  typedef enum logic [2:0] {
+    RNE,
+    RTZ,
+    RDN,
+    RUP,
+    RMM,
+    DYN = 3'b111
+  } round_mode_t;
+
 endpackage
