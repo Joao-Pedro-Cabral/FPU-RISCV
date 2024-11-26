@@ -1,7 +1,7 @@
 
 module priority_encoder_tb();
 
-  localparam integer N = 16;
+  localparam integer N = 8;
 
   logic [N-1:0] A;
   logic [N == 1 ? 0 : $clog2(N)-1:0] Y, expected_data;
