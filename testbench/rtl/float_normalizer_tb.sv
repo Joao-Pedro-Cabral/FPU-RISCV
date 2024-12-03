@@ -4,7 +4,7 @@ module float_normalizer_tb;
 localparam integer N = 4;
 
 logic [2*N-1:0] A;
-logic [3*N-1:0] A2;
+logic [3*N-2:0] A2;
 logic [N-1:0] Y, Y_;
 logic [$clog2(N):0] msb_pos, msb_pos_;
 
@@ -37,7 +37,7 @@ initial begin
     A = i;
     #5;
     msb_pos_ = floor_log2(A);
-    A2 = {A, {N{1'b0}}};
+    A2 = {A, {N-1{1'b0}}};
     Y_ = A2 >> msb_pos_;
     CHK_MSB: assert(msb_pos === msb_pos_);
     CHK_Y: assert(Y === Y_);
