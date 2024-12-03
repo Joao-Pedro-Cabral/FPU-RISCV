@@ -8,7 +8,7 @@ module float_normalizer #(
 );
 
 logic [$clog2(N):0] msb_pos_;
-logic [3*N-1:0] A2 = {A, {N{1'b0}}};
+logic [3*N-1:0] A2;
 
 priority_encoder #(
   .N(2*N)
@@ -18,6 +18,7 @@ priority_encoder #(
   .empty()
 );
 
+assign A2 = {A, {N{1'b0}}};
 assign Y = A2[msb_pos_+:N];
 
 assign msb_pos = msb_pos_;
