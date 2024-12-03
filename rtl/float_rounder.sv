@@ -1,5 +1,5 @@
 
-import ieee_float_pkg::*;
+import float_pkg::*;
 
 module float_rounder #(
   parameter int N = 8

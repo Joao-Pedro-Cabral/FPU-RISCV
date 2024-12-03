@@ -1,5 +1,5 @@
 
-package ieee_float_pkg;
+package float_pkg;
 
   import config_pkg::*;
 
@@ -9,7 +9,7 @@ package ieee_float_pkg;
     logic sign;
     logic [Exponent-1:0] exp;
     logic [Fraction-1:0] frac;
-  } ieee_float;
+  } float;
 
   typedef enum logic [2:0] {
     RNE,

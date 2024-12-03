@@ -1,6 +1,7 @@
 files = [
     "float_rounder.sv",
-    "ieee_float_pkg.sv"
+    "float_normalizer.sv",
+    "float_pkg.sv"
 ]
 
 modules = {

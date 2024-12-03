@@ -1,7 +1,7 @@
 
 module float_rounder_tb;
 
-import ieee_float_pkg::*;
+import float_pkg::*;
 
 localparam integer N = 4;
 
